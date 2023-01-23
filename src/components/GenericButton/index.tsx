@@ -1,12 +1,10 @@
 import React from 'react'
-import { Container } from './style';
+import { Button } from './style';
 
 export default function GenericButton() {
   return (
-    <Container>
-      <p>
+    <Button>
         TOCOU ROMARINHO!!!!!!!!!!!!!
-      </p>
-    </Container>
+    </Button>
   )
 }
