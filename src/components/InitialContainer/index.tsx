@@ -1,12 +1,15 @@
 import React from 'react'
-import { Container } from './style';
+import { Container, Image, Title } from './style';
+import wolfImg from "../../assets/wolf-img.png";
+
 
 export default function InitialContainer() {
   return (
     <Container>
-      <p>
+      <Title>
         TOCOU ROMARINHO!!!!!!!!!!!!!
-      </p>
+      </Title>
+      <Image src={ wolfImg }></Image>
     </Container>
   )
 }

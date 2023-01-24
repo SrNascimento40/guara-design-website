@@ -12,7 +12,9 @@ export const Button = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
   font-size: 1rem;
+  font-weight: 600;
 
   &:before {
     content: "";

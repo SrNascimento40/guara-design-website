@@ -4,7 +4,7 @@ import { Button } from './style';
 export default function GenericButton() {
   return (
     <Button>
-        TOCOU ROMARINHO!!!!!!!!!!!!!
+        Nos Contrate!
     </Button>
   )
 }
