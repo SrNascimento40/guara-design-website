@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
-  padding: 0.6em 2em;
+interface IButtonProps {
+  width?: string;
+  fontSize?: string;
+  padding?: string;
+}
+
+
+export const Button = styled.button<IButtonProps>`
+  padding: ${(props) => props.padding || "0.6rem 2rem"};
   border: none;
   outline: none;
   color: #d9ad77;
@@ -13,8 +20,10 @@ export const Button = styled.button`
   -webkit-user-select: none;
   touch-action: manipulation;
 
-  font-size: 1rem;
+  font-size: ${(props) => props.fontSize || "1rem"};
   font-weight: 600;
+  width: ${(props) => props.width || "auto"};
+
 
   &:before {
     content: "";

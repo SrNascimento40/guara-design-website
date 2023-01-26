@@ -1,9 +1,16 @@
 import React from 'react'
 import { Button } from './style';
 
-export default function GenericButton() {
+interface IGenericButtonProps {
+  width?: string;
+  fontSize?: string;
+  padding?: string;
+}
+
+
+export default function GenericButton(props : IGenericButtonProps) {
   return (
-    <Button>
+    <Button width={props.width} fontSize={props.fontSize} padding={props.padding}>
         Nos Contrate!
     </Button>
   )

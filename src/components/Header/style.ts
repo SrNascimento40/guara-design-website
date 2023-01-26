@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  position: relative;
 
   align-self: center;
   justify-content: space-between;
