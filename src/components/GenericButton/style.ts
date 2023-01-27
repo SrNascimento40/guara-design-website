@@ -4,14 +4,15 @@ interface IButtonProps {
   width?: string;
   fontSize?: string;
   padding?: string;
+  textColor?: string;
+  textHoverColor?: string;
 }
-
 
 export const Button = styled.button<IButtonProps>`
   padding: ${(props) => props.padding || "0.6rem 2rem"};
   border: none;
   outline: none;
-  color: #d9ad77;
+  color: ${(props) => props.textColor || "#d9ad77"};
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -24,18 +25,15 @@ export const Button = styled.button<IButtonProps>`
   font-weight: 600;
   width: ${(props) => props.width || "auto"};
 
-
   &:before {
     content: "";
     background: linear-gradient(
       45deg,
-      #d9ad77,
-      #ff8c00,
-      #89591f,
-      #a6845b,
-      #ff8c00,
-      #735a3c,
-      #d9ad77
+      #ffbc00,
+      #ff7400,
+      #8b5e33,
+      #663300,
+      #ffbc00
     );
     position: absolute;
     top: -2px;
@@ -76,6 +74,14 @@ export const Button = styled.button<IButtonProps>`
   }
 
   &:hover {
-    color: #FFDDB2;
+    color: ${(props) => props.textHoverColor || "#FFDDB2"};
+    background: linear-gradient(
+    45deg,
+    rgba(255, 188, 0, 0.09),
+    rgba(255, 116, 0, 0.3),
+    rgba(139, 94, 51, 0.09),
+    rgba(102, 51, 0, 0.09),
+    rgba(255, 188, 0, 0.19)
+  );
   }
 `;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -25,16 +25,18 @@ export const Image = styled.img`
 export const Title = styled.h2`
   font-size: 4rem;
   font-weight: 700;
-  color: #F2F2F2;
+  color: #f2f2f2;
   margin-bottom: 1.5rem;
 `;
 
-export const Text = styled.p`
-  font-size: 1rem;
+export const Text = styled.em`
+  font-size: 1.125rem;
   font-weight: 400;
+  font-family: "Poppins", sans-serif;
+
   text-align: justify;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   max-width: 500px;
 
-  color: #F2F2F2;
+  color: #f2f2f2;
 `;

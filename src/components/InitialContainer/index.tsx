@@ -7,13 +7,11 @@ export default function InitialContainer() {
   return (
     <Container>
       <Wrapper>
-        <Title>TOCOU ROMARINHO!!!</Title>
+        <Title>Guará Design</Title>
         <Text>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure odio,
-          quam perspiciatis, dolor repellat ducimus. Maiores qui veniam culpa
-          vel?
+          Transformando ideias em resultados
         </Text>
-        <GenericButton width="70%" fontSize="1.5rem" padding='1.5rem 2rem'/>
+        <GenericButton width="70%" textColor="#BA8A0B" textHoverColor="#EBAC02" fontSize="1.5rem" padding="1.5rem 2rem" />
       </Wrapper>
       <Image src={wolfImg}></Image>
     </Container>

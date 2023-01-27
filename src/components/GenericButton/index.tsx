@@ -5,12 +5,14 @@ interface IGenericButtonProps {
   width?: string;
   fontSize?: string;
   padding?: string;
+  textColor?: string;
+  textHoverColor?: string;
 }
 
 
 export default function GenericButton(props : IGenericButtonProps) {
   return (
-    <Button width={props.width} fontSize={props.fontSize} padding={props.padding}>
+    <Button width={props.width} textColor={props.textColor} textHoverColor={props.textHoverColor} fontSize={props.fontSize} padding={props.padding}>
         Nos Contrate!
     </Button>
   )
