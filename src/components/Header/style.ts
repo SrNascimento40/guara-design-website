@@ -5,7 +5,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  position: relative;
+
+  width: -webkit-fill-available;
+  position: absolute;
 
   align-self: center;
   justify-content: space-between;

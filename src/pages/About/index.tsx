@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "./style";
 
-export default function Contact() {
+export default function About() {
   return (
     <Container>
-      <p>Contact!!!!!!!!!!!!!</p>
+      <p>Abort!nh0</p>
     </Container>
   );
 }

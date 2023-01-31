@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image, Text, Title, Wrapper } from "./style";
-import wolfImg from "../../assets/wolf-img.png";
+import wolfImg from "../../assets/wolves.png";
 import GenericButton from "../GenericButton";
 import { Link } from "react-router-dom";
 

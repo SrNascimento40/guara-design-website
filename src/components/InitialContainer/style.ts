@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  align-items: center;
   justify-content: space-between;
-  padding-left: 6.5rem;
-  padding-right: 6.5rem;
+  align-items: center;
+  padding: 0 6rem;
 `;
 
 export const Wrapper = styled.div`
@@ -16,7 +15,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   max-width: 700px;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
 `;
 
 export const Image = styled.img`
