@@ -4,10 +4,10 @@ import { Container, HeaderList, Logo, MenuItem, MenuItems } from "./style";
 import Icon from "../../assets/guara.png";
 
 const menuItems = [
-  { label: "Sobre nós", href: "#" },
-  { label: "Serviços", href: "#" },
-  { label: "Trabalhos", href: "#" },
-  { label: "Redes sociais", href: "#" },
+  { label: "Sobre nós", link: "/about" },
+  { label: "Serviços", link: "/services" },
+  { label: "Trabalhos", link: "/portfolio" },
+  { label: "Redes sociais", link: "/social-media" },
 ];
 
 export default function Header() {
@@ -17,10 +17,10 @@ export default function Header() {
       <HeaderList>
         {menuItems.map((item, index) => (
           <MenuItems key={index}>
-            <MenuItem href={item.href}>{item.label}</MenuItem>
+            <MenuItem to={item.link}>{item.label}</MenuItem>
           </MenuItems>
         ))}
-        <GenericButton />
+        <GenericButton text="Faça um orçamento" />
       </HeaderList>
     </Container>
   );

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -32,20 +33,20 @@ export const MenuItems = styled.li`
   align-self: center;
   padding: 0.5rem 0;
   cursor: pointer;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 3px solid #FFDDB2;
+    border-bottom: 2px solid #ffddb2;
 
     a {
-      color: #FFDDB2;
+      color: #ffddb2;
     }
   }
 `;
 
-export const MenuItem = styled.a`
-  color: #D9AD77;
+export const MenuItem = styled(Link)`
+  color: #d9ad77;
   font-size: 1rem;
   font-weight: 600;
   transition: color 0.3s ease-in-out;
