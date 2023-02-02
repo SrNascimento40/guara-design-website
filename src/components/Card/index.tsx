@@ -9,14 +9,12 @@ interface IGenericButtonProps {
 
 export default function Card(props: IGenericButtonProps) {
   return (
-    <>
-      <Container>
-        <Title>{props.title}</Title>
-        <ImageWrapper>
-          <Image src={props.image} />
-        </ImageWrapper>
-        <Text>{props.text}</Text>
-      </Container>
-    </>
+    <Container>
+      <Title>{props.title}</Title>
+      <ImageWrapper>
+        <Image src={props.image} />
+      </ImageWrapper>
+      <Text>{props.text}</Text>
+    </Container>
   );
 }

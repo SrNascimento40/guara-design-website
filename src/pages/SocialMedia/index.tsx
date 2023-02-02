@@ -1,10 +1,11 @@
 import React from "react";
 import { Container } from "./style";
+import IconsContainer from "../../components/IconsContainer";
 
 export default function SocialMedia() {
   return (
     <Container>
-      <p>SocialMedia!!!!!!!!!!!!!</p>
+      <IconsContainer />
     </Container>
   );
 }
