@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ICardProps {
+  width: string;
+  height: string;
+}
+
+export const Container = styled.div<ICardProps>`
   background-color: rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 400px;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
   padding: 1.25rem 1.25rem 2rem;
 
   display: flex;
