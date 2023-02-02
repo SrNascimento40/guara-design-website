@@ -12,28 +12,28 @@ import youtube from "../../assets/social-medias/youtube-icon.png";
 export default function IconsContainer() {
   return (
     <Container>
-      <a href="www.facebook.com/guarawebdesign" target="_blank">
+      <a href="https://www.facebook.com/guarawebdesign" target="_blank">
         <Image src={fbicon} />
       </a>
-      <a href="www.instagram.com/guarawebdesign" target="_blank">
+      <a href="https://www.instagram.com/guarawebdesign" target="_blank">
         <Image src={instagram} />
       </a>
-      <a href="www.twitter.com/guarawebdesign" target="_blank">
+      <a href="https://www.twitter.com/guarawebdesign" target="_blank">
         <Image src={twitter} />
       </a>
-      <a href="www.whatsapp.com/guarawebdesign" target="_blank">
+      <a href="https://www.whatsapp.com/guarawebdesign" target="_blank">
         <Image src={whatsapp} />
       </a>
-      <a href="www.linkedin.com/guarawebdesign" target="_blank">
+      <a href="https://www.linkedin.com/guarawebdesign" target="_blank">
         <Image src={linkedin} />
       </a>
-      <a href="www.github.com/guarawebdesign" target="_blank">
+      <a href="https://www.github.com/guarawebdesign" target="_blank">
         <Image src={github} />
       </a>
-      <a href="www.tiktok.com/guarawebdesign" target="_blank">
+      <a href="https://www.tiktok.com/guarawebdesign" target="_blank">
         <Image src={tiktok} />
       </a>
-      <a href="www.youtube.com/guarawebdesign" target="_blank">
+      <a href="https://www.youtube.com/guarawebdesign" target="_blank">
         <Image src={youtube} />
       </a>
     </Container>

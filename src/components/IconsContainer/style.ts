@@ -17,3 +17,8 @@ export const Image = styled.img`
   height: 148px;
   margin: 0 2.5rem;
 `;
+
+export const FormMessage = styled.form`
+  display: flex;
+  flex-direction: column;
+`;

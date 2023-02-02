@@ -5,6 +5,7 @@ import Icon from "../../assets/guara.png";
 import { Link } from "react-router-dom";
 
 const menuItems = [
+  { label: "Home", link: "/" },
   { label: "Sobre nós", link: "/about" },
   { label: "Serviços", link: "/services" },
   { label: "Portfólio", link: "/portfolio" },
