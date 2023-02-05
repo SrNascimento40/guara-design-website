@@ -16,6 +16,16 @@ export const Container = styled.div<IContainerProps>`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -29,6 +39,7 @@ export const Container = styled.div<IContainerProps>`
 
 export const Image = styled.img`
   height: 100%;
+  transition: height 0.3s ease-in-out;
 `;
 
 export const ImageWrapper = styled.div`
