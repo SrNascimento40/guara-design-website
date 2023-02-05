@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Image,
@@ -14,6 +14,11 @@ import mail from "../../assets/mail-icon.svg";
 export default function ContactContainer() {
   const [isEmail, setIsEmail] = useState(true);
   const [message, setMessage] = useState("");
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   const handleSubmitWhatsApp = () => {
     window.open(
@@ -26,7 +31,7 @@ export default function ContactContainer() {
   };
 
   return (
-    <Container>
+    <Container className={isLoaded ? "enter" : "loading"}>
       <Title>Nos mande uma mensagem</Title>
       <MailWhatsDiv>
         <a onClick={() => setIsEmail(false)}>

@@ -19,6 +19,15 @@ export const Title = styled.h2`
   font-weight: 800;
 
   margin-bottom: 1.5rem;
+
+  opacity: 0;
+  transform: translateY(-50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 `;
 
 export const AboutText = styled.p`
@@ -26,4 +35,13 @@ export const AboutText = styled.p`
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 `;

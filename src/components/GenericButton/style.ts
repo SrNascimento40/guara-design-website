@@ -25,6 +25,15 @@ export const Button = styled.button<IButtonProps>`
   font-weight: 600;
   width: ${(props) => props.width || "auto"};
 
+  opacity: 0;
+  transform: translateX(-25px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.75s ease-in-out, transform 0.5s ease-in-out;
+  }
+
   &:before {
     content: "";
     background: linear-gradient(
@@ -76,12 +85,12 @@ export const Button = styled.button<IButtonProps>`
   &:hover {
     color: ${(props) => props.textHoverColor || "#FFDDB2"};
     background: linear-gradient(
-    45deg,
-    rgba(255, 188, 0, 0.09),
-    rgba(255, 116, 0, 0.3),
-    rgba(139, 94, 51, 0.09),
-    rgba(102, 51, 0, 0.09),
-    rgba(255, 188, 0, 0.19)
-  );
+      45deg,
+      rgba(255, 188, 0, 0.09),
+      rgba(255, 116, 0, 0.3),
+      rgba(139, 94, 51, 0.09),
+      rgba(102, 51, 0, 0.09),
+      rgba(255, 188, 0, 0.19)
+    );
   }
 `;

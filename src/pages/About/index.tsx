@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AboutText, Container, Title } from "./style";
 
 export default function About() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <Container>
-      <Title>Sobre nós</Title>
-      <AboutText>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre nós</Title>
+      <AboutText className={isLoaded ? "enter" : "loading"}>
         A Guara Design é uma empresa inovadora que surgiu em 2023 com a missão
         de levar as pequenas empresas para o mundo digital.
         <br />

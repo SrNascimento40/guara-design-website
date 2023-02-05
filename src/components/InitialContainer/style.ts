@@ -20,6 +20,15 @@ export const Wrapper = styled.div`
 
 export const Image = styled.img`
   height: 300px;
+
+  opacity: 0;
+  transform: translateX(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 `;
 
 export const Title = styled.h2`
@@ -27,6 +36,15 @@ export const Title = styled.h2`
   font-weight: 700;
   color: #f2f2f2;
   margin-bottom: 1.25rem;
+
+  opacity: 0;
+  transform: translateX(-50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 `;
 
 export const Text = styled.em`
@@ -39,4 +57,13 @@ export const Text = styled.em`
   max-width: 500px;
 
   color: #f2f2f2;
+
+  opacity: 0;
+  transform: translateX(-50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 `;
