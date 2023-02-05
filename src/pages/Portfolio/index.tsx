@@ -1,34 +1,37 @@
 import React from "react";
 import { Container } from "./style";
 import Card from "../../components/Card";
-import wolf from "../../assets/wolf-img.png";
+import PetPlan from "../../assets/Works/PetPlan.png";
+import Invertido from "../../assets/Works/Invertido.png";
+import PortfolioImage from "../../assets/Works/Portfolio.png";
+import RunningApp from "../../assets/Works/RunningApp.png";
 
 export default function Portfolio() {
   return (
     <Container>
       <Card
         size="portfolio"
-        title="Limpeza de chão"
-        text="Com profissionais qualificados, garantimos um chão brilhante."
-        image={wolf}
+        title="PetPlan"
+        text="Site FullStack criado em equipe como projeto de conclusão do bootcamp de desenvolvimento FullStack da Gama Academy. Utilizado React, Javascript e Tailwind."
+        image={PetPlan}
       />
       <Card
         size="portfolio"
-        title="Limpeza de chão"
-        text="Com profissionais qualificados, garantimos um chão brilhante."
-        image={wolf}
+        title="Invertido"
+        text="Projeto criado como parte do bootcamp de CSS e estilização realizado pela empresa Digital Innovation One. Utilizado apenas HTML, Javascript e CSS."
+        image={Invertido}
       />
       <Card
         size="portfolio"
-        title="Limpeza de chão"
-        text="Com profissionais qualificados, garantimos um chão brilhante."
-        image={wolf}
+        title="PortfolioImage"
+        text="Projeto criado com o propósito de exibir outros trabalhos anteriores. Criado com ReactJs, NextJs, Styled-Components e Javascript."
+        image={PortfolioImage}
       />
       <Card
         size="portfolio"
-        title="Limpeza de chão"
-        text="Com profissionais qualificados, garantimos um chão brilhante."
-        image={wolf}
+        title="RunningApp"
+        text="Aplicativo funcional que capta a distância e o tempo do usuário durante uma corrida. Criado com Expo, Typescript, React Native e Styled-components."
+        image={RunningApp}
       />
     </Container>
   );

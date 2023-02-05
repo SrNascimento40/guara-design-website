@@ -13,6 +13,7 @@ export default function Card(props: IGenericButtonProps) {
     <Container
       width={props.size == "portfolio" ? "100%" : "300px"}
       height={props.size == "portfolio" ? "425px" : "400px"}
+      hoverSize={props.size == "portfolio" ? "115%" : "100%"}
     >
       <Title>{props.title}</Title>
       <ImageWrapper>
