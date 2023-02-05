@@ -6,10 +6,10 @@ import {
   MailWhatsDiv,
   SendButton,
   Title,
+  FormMessage,
 } from "./style";
 import whatsApp from "../../assets/whatsapp-icon.svg";
 import mail from "../../assets/mail-icon.svg";
-import { FormMessage } from "../IconsContainer/style";
 
 export default function ContactContainer() {
   const [isEmail, setIsEmail] = useState(true);

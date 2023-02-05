@@ -57,3 +57,8 @@ export const Image = styled.img`
     mix-blend-mode: hard-light;
   }
 `;
+
+export const FormMessage = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
