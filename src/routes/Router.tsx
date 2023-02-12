@@ -1,10 +1,7 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
-import Contact from "../pages/Contact";
-import Portfolio from "../pages/Portfolio";
-import Services from "../pages/Services";
+import Blog from "../pages/Blog";
 import About from "../pages/About";
-import SocialMedia from "../pages/SocialMedia";
 import Header from "../components/Header";
 
 const Router = () => {
@@ -13,11 +10,8 @@ const Router = () => {
       <Header />
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<Contact />} path="/contact" />
+        <Route element={<Blog />} path="/Blog" />
         <Route element={<About />} path="/about" />
-        <Route element={<Portfolio />} path="/portfolio" />
-        <Route element={<Services />} path="/services" />
-        <Route element={<SocialMedia />} path="/social-media" />
       </Routes>
     </BrowserRouter>
   );
