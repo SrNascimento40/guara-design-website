@@ -5,51 +5,35 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
   width: -webkit-fill-available;
   position: absolute;
+  justify-content: flex-start;
 
-  align-self: center;
-  justify-content: space-between;
-  padding: 30px 34px;
-`;
-
-export const Logo = styled.img`
-  align-self: center;
-  height: 45px;
-  cursor: pointer;
-`;
-
-export const HeaderList = styled.ul`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  justify-content: space-between;
-  list-style: none;
-
+  padding: 0.75rem 5rem;
   gap: 2.5rem;
+
+  background-color: #cca1f4;
+  list-style: none;
 `;
 
 export const MenuItems = styled.li`
   align-self: center;
-  padding: 0.5rem 0;
   cursor: pointer;
   border-bottom: 2px solid transparent;
   transition: 0.3s ease-in-out;
 
   &:hover {
-    border-bottom: 2px solid #ffddb2;
+    border-bottom: 2px solid #1d021d;
 
     a {
-      color: #ffddb2;
+      color: #1d021d;
     }
   }
 `;
 
 export const MenuItem = styled(Link)`
-  color: #d9ad77;
-  font-size: 1rem;
-  font-weight: 600;
+  color: #400a41;
+  font-size: 1.5rem;
+  font-weight: 400;
   transition: color 0.3s ease-in-out;
 `;
