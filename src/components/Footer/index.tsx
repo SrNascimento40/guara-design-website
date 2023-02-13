@@ -5,7 +5,9 @@ import GuaraLogo from "../../assets/Images/guara.png";
 export default function Footer() {
   return (
     <Container>
-      <Image src={GuaraLogo} />
+      <a href="#">
+        <Image src={GuaraLogo} />
+      </a>
     </Container>
   );
 }
