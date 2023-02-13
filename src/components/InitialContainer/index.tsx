@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Image, Text, Title, Wrapper } from "./style";
-import wolfImg from "../../assets/wolves.png";
+import wolfImg from "../../assets/Images/guara.png";
 
 export default function InitialContainer() {
   const [isLoaded, setIsLoaded] = useState(false);

@@ -19,11 +19,11 @@ export const Container = styled.div`
 export const MenuItems = styled.li`
   align-self: center;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+  transition: 0.5s ease-in-out;
 
   &:hover {
-    border-bottom: 2px solid #1d021d;
+    border-bottom: 3px solid #1d021d;
 
     a {
       color: #1d021d;
@@ -36,4 +36,5 @@ export const MenuItem = styled(Link)`
   font-size: 1.5rem;
   font-weight: 400;
   transition: color 0.3s ease-in-out;
+  font-family: "Matchadal";
 `;

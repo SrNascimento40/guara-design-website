@@ -10,14 +10,12 @@ export default function About() {
 
   return (
     <Container>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre nós</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
       <AboutText className={isLoaded ? "enter" : "loading"}>
-        A Guara Design é uma empresa inovadora que surgiu em 2023 com a missão
-        de levar as pequenas empresas para o mundo digital.
-        <br />
-        Com uma equipe especializada em desenvolvimento de sites, design e
-        marketing digital, a Guara oferece soluções completas para garantir o
-        crescimento e sucesso dos seus clientes.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque,
+        quos reprehenderit voluptas, atque assumenda quis, repellendus nemo
+        nulla numquam labore. Inventore, laboriosam esse. Voluptates ea eveniet
+        dolor quam officiis?
       </AboutText>
     </Container>
   );

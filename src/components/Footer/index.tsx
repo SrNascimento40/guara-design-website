@@ -1,12 +1,11 @@
-import React from 'react'
-import { Container } from './style';
+import React from "react";
+import { Container, Image } from "./style";
+import GuaraLogo from "../../assets/Images/guara.png";
 
 export default function Footer() {
   return (
     <Container>
-      <p>
-        TOCOU ROMARINHO!!!!!!!!!!!!!
-      </p>
+      <Image src={GuaraLogo} />
     </Container>
-  )
+  );
 }

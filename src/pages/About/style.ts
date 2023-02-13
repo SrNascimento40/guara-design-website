@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background-color: #262626;
+  background-color: #fde7fe;
+  color: #400a41;
 
   display: flex;
   flex-direction: column;
@@ -14,9 +15,10 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #f2f2f2;
-  font-size: 4rem;
-  font-weight: 800;
+  color: #400a41;
+  font-family: "Matchadal", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
 
   margin-bottom: 1.5rem;
 
@@ -31,9 +33,9 @@ export const Title = styled.h2`
 `;
 
 export const AboutText = styled.p`
-  color: #e9e9e9;
-  font-size: 1.125rem;
-  font-weight: 300;
+  color: #400a41;
+  font-size: 1.25rem;
+  font-weight: 400;
   line-height: 1.75rem;
 
   opacity: 0;
