@@ -5,15 +5,16 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: -webkit-fill-available;
   position: absolute;
-  justify-content: flex-start;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  list-style: none;
 
   padding: 0.75rem 5rem;
   gap: 2.5rem;
+  border-radius: 0 0 15px 15px;
 
-  background-color: #cca1f4;
-  list-style: none;
+  background: #68436987;
 `;
 
 export const MenuItems = styled.li`
@@ -32,8 +33,10 @@ export const MenuItems = styled.li`
 `;
 
 export const MenuItem = styled(Link)`
-  color: #400a41;
+  color: #fff;
   font-size: 1.5rem;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+
   font-weight: 400;
   transition: color 0.3s ease-in-out;
   font-family: "Matchadal";

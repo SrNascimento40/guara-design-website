@@ -14,24 +14,28 @@ export default function Home() {
         title="Blablabla hehehe"
         text="blablabla hehehe lorem ipsum e tals"
         datetime="12 jun 2016"
+        blogPage={false}
       />
       <ArticlePost
         image={wolf}
         title="Blablabla hehehe"
         text="blablabla hehehe lorem ipsum e tals. blablabla hehehe lorem ipsum e tals. blablabla hehehe lorem ipsum e tals. blablabla hehehe lorem ipsum e tals"
         datetime="12 jun 2016"
+        blogPage={false}
       />
       <ArticlePost
         image={wolf}
         title="Blablabla hehehe"
         text="blablabla hehehe lorem ipsum e tals"
         datetime="12 jun 2016"
+        blogPage={false}
       />
       <ArticlePost
         image={wolf}
         title="Blablabla hehehe"
         text="blablabla hehehe lorem ipsum e tals"
         datetime="12 jun 2016"
+        blogPage={false}
       />
       <Footer />
     </Container>

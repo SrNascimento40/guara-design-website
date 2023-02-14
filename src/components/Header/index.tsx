@@ -1,12 +1,14 @@
 import React from "react";
 import { Container, MenuItem, MenuItems } from "./style";
-import Icon from "../../assets/guara.png";
 import { Link } from "react-router-dom";
 
 const menuItems = [
-  { label: "Home", link: "/" },
-  { label: "Sobre", link: "/about" },
-  { label: "Blog", link: "/Blog" },
+  { label: "Inicio", link: "/" },
+  { label: "Livros", link: "/livros" },
+  { label: "EE", link: "/ee" },
+  { label: "Parceiros", link: "/parceiros" },
+  { label: "Sobre", link: "/sobre" },
+  { label: "Contato", link: "/contato" },
 ];
 
 export default function Header() {

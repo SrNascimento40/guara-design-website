@@ -1,12 +1,23 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface IArticleProps {
+  blogPage: boolean;
+}
+
+export const Container = styled.div<IArticleProps>`
   max-width: 90vw;
   display: flex;
   flex-direction: row;
+
   margin: 0 auto 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+  background: rgba(210, 198, 236, 0);
+  background: ${(props) =>
+    props.blogPage
+      ? "linear-gradient(0deg, rgba(210, 198, 236, 0.92) 0%, rgba(253, 231, 254, 0) 15%)"
+      : "rgba(210, 198, 236, 0)"};
 `;
 
 export const Image = styled.img`

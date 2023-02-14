@@ -13,11 +13,12 @@ interface IArticlePostProps {
   title: string;
   text: string;
   datetime: string;
+  blogPage: boolean;
 }
 
 export default function ArticlePost(props: IArticlePostProps) {
   return (
-    <Container>
+    <Container blogPage={props.blogPage}>
       <Image src={props.image} />
       <TextWrapper>
         <DateTimePost>{props.datetime}</DateTimePost>

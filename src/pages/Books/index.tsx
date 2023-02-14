@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./style";
 
-export default function Blog() {
+export default function Books() {
   return (
     <Container>
       <a href="#">file</a>
