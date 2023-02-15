@@ -8,8 +8,8 @@ import {
   Title,
   FormMessage,
 } from "./style";
-import whatsApp from "../../assets/whatsapp-icon.svg";
-import mail from "../../assets/mail-icon.svg";
+import whatsApp from "../../assets/Images/whatsapp-icon.svg";
+import mail from "../../assets/Images/mail-icon.svg";
 
 export default function ContactContainer() {
   const [isEmail, setIsEmail] = useState(true);

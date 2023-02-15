@@ -9,4 +9,8 @@ export default createGlobalStyle`
     font-family: 'Sofia Sans', sans-serif;
     text-decoration: none;
   }
+
+  body {
+    background-image: linear-gradient(to bottom, rgba(131, 147, 219, 1), rgba(173, 187, 249, 0.92));
+  }
 `;

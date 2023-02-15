@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: 15px;
   opacity: 0;
   transform: translateY(50px);
   &.enter {
@@ -25,7 +26,7 @@ export const Input = styled.input`
 `;
 
 export const Title = styled.h2`
-  color: #f2f2f2;
+  color: #434a69;
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -33,7 +34,8 @@ export const Title = styled.h2`
 
 export const SendButton = styled.button`
   padding: 0.6rem 2rem;
-  color: #d9ad77;
+  background-color: #434a69;
+  color: #fde7fe;
   cursor: pointer;
   border-radius: 10px;
   font-size: 1rem;

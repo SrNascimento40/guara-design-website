@@ -33,7 +33,7 @@ export const Image = styled.img`
 `;
 
 export const TitlePost = styled.h3`
-  color: #400a41;
+  color: #fff;
   font-family: "Matchadal", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -41,14 +41,14 @@ export const TitlePost = styled.h3`
 `;
 
 export const TextPost = styled.p`
-  color: #400a41;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   max-width: 40vw;
 `;
 
 export const DateTimePost = styled.p`
-  color: rgba(0, 0, 0, 0.48);
+  color: rgba(340, 340, 340, 0.48);
   font-size: 0.75rem;
   font-weight: 300;
 `;

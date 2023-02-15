@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Container, Image, Text, Title, Wrapper } from "./style";
-import wolfImg from "../../assets/Images/guara.png";
+import { Container, Image, ImageWrapper, Text, Title, Wrapper } from "./style";
+import cloud2 from "../../assets/Images/cloud.png";
+import cloud1 from "../../assets/Images/cloud2.png";
+import smallCloud from "../../assets/Images/small-cloud.png";
 
 export default function InitialContainer() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -17,7 +19,18 @@ export default function InitialContainer() {
           Transformando ideias em resultados
         </Text>
       </Wrapper>
-      <Image src={wolfImg} className={isLoaded ? "enter" : "loading"}></Image>
+      <ImageWrapper>
+        <Image
+          src={cloud1}
+          left={true}
+          className={isLoaded ? "enter" : "loading"}
+        ></Image>
+        <Image
+          src={cloud2}
+          left={false}
+          className={isLoaded ? "enter" : "loading"}
+        ></Image>
+      </ImageWrapper>
     </Container>
   );
 }
