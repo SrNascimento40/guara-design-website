@@ -8,8 +8,25 @@ export default function EspiritBooks() {
     setIsLoaded(true);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+    return () => {
+      document.body.style.overflow = "hidden";
+    };
+  }, []);
+
   return (
     <Container>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
       <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
       <AboutText className={isLoaded ? "enter" : "loading"}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque,

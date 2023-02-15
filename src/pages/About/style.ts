@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
+  padding: 0 30%;
 
   color: #434a69;
 
@@ -11,7 +12,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 30%;
 `;
 
 export const Title = styled.h2`
@@ -37,6 +37,23 @@ export const AboutText = styled.p`
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.75rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+`;
+
+export const Image = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50vh;
+  z-index: 0;
 
   opacity: 0;
   transform: translateY(50px);

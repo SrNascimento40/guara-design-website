@@ -8,6 +8,7 @@ export const Container = styled.div<IArticleProps>`
   max-width: 90vw;
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   margin: 0 auto 2rem;
   padding-bottom: 1.5rem;
@@ -27,7 +28,7 @@ export const Image = styled.img`
   background: radial-gradient(
     circle,
     rgba(64, 10, 65, 0.5) 0%,
-    rgba(253, 231, 254, 0.5) 50%
+    rgba(253, 231, 254, 0) 50%
   );
   object-fit: contain;
 `;

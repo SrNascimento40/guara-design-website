@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { AboutText, Container, Title } from "./style";
+import { AboutText, Container, Image, Title } from "./style";
+import emojis from "../../assets/Images/emojis.png";
 
 export default function About() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -17,6 +18,7 @@ export default function About() {
         nulla numquam labore. Inventore, laboriosam esse. Voluptates ea eveniet
         dolor quam officiis?
       </AboutText>
+      <Image src={emojis} className={isLoaded ? "enter" : "loading"} />
     </Container>
   );
 }

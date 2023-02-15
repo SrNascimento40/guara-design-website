@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import InitialContainer from "../../components/InitialContainer";
 import { Container } from "./style";
 import Footer from "../../components/Footer";
 import ArticlePost from "../../components/ArticlePost";
 import wolf from "../../assets/Images/guara.png";
+import ProfileCard from "../../components/ProfileCard";
 
 export default function Home() {
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+    return () => {
+      document.body.style.overflow = "hidden";
+    };
+  }, []);
+
   return (
     <Container>
       <InitialContainer />
+      <ProfileCard />
       <ArticlePost
         image={wolf}
         title="Blablabla hehehe"

@@ -10,14 +10,14 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-top: 15vh;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 700px;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const ImageWrapper = styled.div`
@@ -56,38 +56,112 @@ export const Image = styled.img<ICloudProps>`
 `;
 
 export const Title = styled.h2`
-  font-size: 4rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1.25rem;
+  font-weight: 500;
+  color: transparent;
+  font-family: "Matchadal";
+
+  font-size: 8rem;
+  line-height: 8.5rem;
+  letter-spacing: -5%;
+  text-stroke: 1px solid rgba(255, 255, 255, 0.42);
+  text-stroke-linejoin: round;
+  text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
+  text-stroke-color: rgba(255, 255, 255, 0.42);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.42);
 
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateY(50px);
 
   &.enter {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 `;
 
-export const Text = styled.em`
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
+export const Title2 = styled.h2`
+  font-weight: 500;
+  color: transparent;
+  font-family: "Matchadal";
 
-  text-align: justify;
-  margin-bottom: 1.5rem;
-  max-width: 500px;
-
-  color: #fff;
+  font-size: 8rem;
+  line-height: 8.5rem;
+  letter-spacing: -5%;
+  text-stroke: 2px solid rgba(255, 255, 255, 0.54);
+  text-stroke-linejoin: round;
+  text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  text-stroke-color: rgba(255, 255, 255, 0.54);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.54);
 
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateY(50px);
 
   &.enter {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+`;
+
+export const Title3 = styled.h2`
+  font-weight: 500;
+  color: transparent;
+  font-family: "Matchadal";
+
+  font-size: 8rem;
+  line-height: 8.5rem;
+  letter-spacing: -5%;
+  text-stroke: 4px solid rgba(255, 255, 255, 0.42);
+  text-stroke-linejoin: round;
+  text-stroke-width: 4px;
+  -webkit-text-stroke-width: 4px;
+  text-stroke-color: rgba(255, 255, 255, 0.42);
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.42);
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+`;
+
+export const Title4 = styled.h2`
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Matchadal";
+
+  font-size: 8rem;
+  line-height: 8.5rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+`;
+
+export const Title5 = styled.h2`
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.54);
+  font-family: "Matchadal";
+
+  font-size: 8rem;
+  line-height: 8.5rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 `;

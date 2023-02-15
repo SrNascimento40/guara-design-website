@@ -10,11 +10,13 @@ export const Container = styled.div`
   transform: translate(-50%, 0%);
   list-style: none;
 
+  z-index: 9999;
+
   padding: 0.75rem 5rem;
   gap: 2.5rem;
   border-radius: 0 0 15px 15px;
 
-  background: #68436987;
+  background: #76767687;
 `;
 
 export const MenuItems = styled.li`
