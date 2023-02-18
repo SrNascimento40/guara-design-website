@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AboutText, Container, Image, Title } from "./style";
 import emojis from "../../assets/Images/emojis.png";
 
+//página sobre a autora do blog
 export default function About() {
   const [isLoaded, setIsLoaded] = useState(false);
 

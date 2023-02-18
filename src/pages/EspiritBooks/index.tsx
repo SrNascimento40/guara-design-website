@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AboutText, Container, Title } from "./style";
 
+//página comas postagens cristãs
 export default function EspiritBooks() {
   const [isLoaded, setIsLoaded] = useState(false);
 

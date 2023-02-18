@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AboutText, Container, Title } from "./style";
 
+//página com as parcerias
 export default function Partnership() {
   const [isLoaded, setIsLoaded] = useState(false);
 

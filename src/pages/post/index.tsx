@@ -11,6 +11,7 @@ interface IPostContainer {
   };
 }
 
+//página do post
 export default function Post() {
   useEffect(() => {
     document.body.style.overflow = "auto";
