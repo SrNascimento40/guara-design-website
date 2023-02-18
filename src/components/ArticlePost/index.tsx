@@ -7,6 +7,7 @@ import {
   TextWrapper,
   DateTimePost,
 } from "./style";
+import { Link } from "react-router-dom";
 
 interface IArticlePostProps {
   image: string;
@@ -19,7 +20,9 @@ interface IArticlePostProps {
 export default function ArticlePost(props: IArticlePostProps) {
   return (
     <Container blogPage={props.blogPage}>
-      <Image src={props.image} />
+      <Link to={"/post"}>
+        <Image src={props.image} />
+      </Link>
       <TextWrapper>
         <DateTimePost>{props.datetime}</DateTimePost>
         <TitlePost>{props.title}</TitlePost>

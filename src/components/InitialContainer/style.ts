@@ -32,26 +32,22 @@ export const ImageWrapper = styled.div`
 
 export const Image = styled.img<ICloudProps>`
   width: 70vw;
-  height: 40vw;
   position: absolute;
   ${(props) =>
     props.left
-      ? "left: 0; margin-left: -50px;"
-      : "right: 0; margin-right: -50px;"};
+      ? "left: 0; margin-left: -200px;"
+      : "right: 0; margin-right: -200px;"};
 
   opacity: 0;
-  transform: translateX(50px);
+  transform: ${(props) =>
+    props.left ? "translateX(-150px)" : "translateX(150px)"};
   overflow: hidden;
 
   &.enter {
     opacity: 1;
     transform: translateX(0);
-    ${(props) =>
-      props.left
-        ? "left: 0; margin-left: -5px;"
-        : "right: 0; margin-right: -5px;"};
 
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 3s ease-in-out, transform 5.5s ease-in-out;
   }
 `;
 
@@ -76,7 +72,7 @@ export const Title = styled.h2`
   &.enter {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
   }
 `;
 
@@ -101,7 +97,7 @@ export const Title2 = styled.h2`
   &.enter {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 1.25s ease-in-out, transform 1.5s ease-in-out;
   }
 `;
 
@@ -126,7 +122,7 @@ export const Title3 = styled.h2`
   &.enter {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
   }
 `;
 
@@ -144,7 +140,7 @@ export const Title4 = styled.h2`
   &.enter {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 1.75s ease-in-out, transform 1.5s ease-in-out;
   }
 `;
 
@@ -162,6 +158,6 @@ export const Title5 = styled.h2`
   &.enter {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
   }
 `;

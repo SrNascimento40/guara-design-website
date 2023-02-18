@@ -26,10 +26,10 @@ export const MenuItems = styled.li`
   transition: 0.5s ease-in-out;
 
   &:hover {
-    border-bottom: 3px solid #1d021d;
+    border-bottom: 3px solid #b8cbed;
 
     a {
-      color: #1d021d;
+      color: #b8cbed;
     }
   }
 `;
