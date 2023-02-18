@@ -1,46 +1,13 @@
-import React, { useState } from "react";
-import {
-  Button,
-  LoginContainer,
-  Container,
-  InputLogin,
-  InputPassword,
-} from "./style";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import { Container } from "./style";
 
-//página de autenticação
+//página comas postagens
 export default function Admin() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-
-  // lógica de autenticação
-  const handleLogin = () => {
-    if (username === "admin" && password === "1234") {
-      console.log("Login bem-sucedido");
-      navigate("/"); // redireciona para a página de administração
-    } else {
-      console.log("Credenciais inválidas");
-    }
-  };
-
   return (
     <Container>
-      <LoginContainer>
-        <InputLogin
-          type="text"
-          placeholder="Usuário"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <InputPassword
-          type="password"
-          placeholder="Senha"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Button onClick={handleLogin}>Entrar</Button>
-      </LoginContainer>
+      <a href="#">file</a>
+      <a href="#">frango</a>
+      <a href="#">tit</a>
     </Container>
   );
 }

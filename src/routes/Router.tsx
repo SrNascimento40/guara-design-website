@@ -8,6 +8,7 @@ import Partnership from "../pages/Partnership";
 import Contact from "../pages/Contact";
 import Post from "../pages/post";
 import Admin from "../pages/Admin";
+import Login from "../pages/Login";
 import Edit from "../pages/Edit";
 import CreatePost from "../pages/CreatePost";
 
@@ -24,6 +25,7 @@ const Router = () => {
         <Route element={<Contact />} path="/contato" />
         <Route element={<Post />} path="/post/:id" />
         <Route element={<Admin />} path="/admin" />
+        <Route element={<Login />} path="/login" />
         <Route element={<Edit />} path="/edit" />
         <Route element={<CreatePost />} path="/createpost" />
       </Routes>

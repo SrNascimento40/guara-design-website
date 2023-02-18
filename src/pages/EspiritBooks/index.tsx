@@ -18,22 +18,9 @@ export default function EspiritBooks() {
 
   return (
     <Container>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>EE</Title>
       <AboutText className={isLoaded ? "enter" : "loading"}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque,
-        quos reprehenderit voluptas, atque assumenda quis, repellendus nemo
-        nulla numquam labore. Inventore, laboriosam esse. Voluptates ea eveniet
-        dolor quam officiis?
+        Livros com a temática EE
       </AboutText>
     </Container>
   );
