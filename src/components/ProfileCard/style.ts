@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   justify-content: end;
 `;
@@ -94,6 +94,8 @@ export const TextPost = styled.p`
   font-size: 1rem;
   font-weight: 300;
   max-width: 40vw;
+  line-height: 1.75rem;
+  text-align: center;
 `;
 
 export const TextWrapper = styled.div`

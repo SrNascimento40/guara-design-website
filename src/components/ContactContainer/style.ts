@@ -19,10 +19,11 @@ export const Container = styled.div`
   }
 `;
 
-export const Input = styled.input`
-  color: #262626;
-  width: 400px;
-  margin-bottom: 0.5rem;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
 `;
 
 export const Title = styled.h2`
@@ -32,36 +33,17 @@ export const Title = styled.h2`
   margin-bottom: 1.5rem;
 `;
 
-export const SendButton = styled.button`
-  padding: 0.6rem 2rem;
-  background-color: #434a69;
-  color: #fde7fe;
-  cursor: pointer;
-  border-radius: 10px;
+export const LinkContact = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  color: #434a69;
   font-size: 1rem;
   font-weight: 600;
-`;
+  margin-bottom: 1.5rem;
 
-export const MailWhatsDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const Image = styled.img`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40px;
-  margin: 0 2.5rem 2.5rem;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  &:hover {
-    mix-blend-mode: hard-light;
+  svg {
+    margin-right: 1rem;
   }
-`;
-
-export const FormMessage = styled.form`
-  display: flex;
-  flex-direction: column;
 `;

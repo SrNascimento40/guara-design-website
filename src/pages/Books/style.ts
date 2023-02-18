@@ -12,7 +12,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 30%;
+  padding: 5rem 15% 1.5rem;
 `;
 
 export const Title = styled.h2`
@@ -25,22 +25,6 @@ export const Title = styled.h2`
 
   opacity: 0;
   transform: translateY(-50px);
-
-  &.enter {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  }
-`;
-
-export const AboutText = styled.p`
-  color: #434a69;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.75rem;
-
-  opacity: 0;
-  transform: translateY(50px);
 
   &.enter {
     opacity: 1;

@@ -19,7 +19,7 @@ export default function Partnership() {
 
   return (
     <Container>
-      <Title>Parceiros:</Title>
+      <Title className={isLoaded ? "enter" : "loading"}>Parceiros</Title>
       <PartnerWrapper>
         <PartnerCard />
         <PartnerCard />

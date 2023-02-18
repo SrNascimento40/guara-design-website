@@ -18,8 +18,11 @@ export default function ProfileCard() {
   return (
     <Container>
       <TextWrapper>
-        <TitlePost>Mariana GetNinjas</TitlePost>
-        <TextPost>Aqui escrevo sobre livros. Good to have you here!</TextPost>
+        <TitlePost>Mariana Nhoque</TitlePost>
+        <TextPost>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+          Good to have you here!
+        </TextPost>
       </TextWrapper>
       <ImageContainer>
         <StarImg src={Vector} />

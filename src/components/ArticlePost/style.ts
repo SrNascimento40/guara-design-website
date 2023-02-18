@@ -6,6 +6,7 @@ interface IArticleProps {
 
 export const Container = styled.div<IArticleProps>`
   max-width: 90vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,6 +47,7 @@ export const TextPost = styled.p`
   font-size: 1rem;
   font-weight: 400;
   max-width: 40vw;
+  text-align: center;
 `;
 
 export const DateTimePost = styled.p`
@@ -57,4 +59,6 @@ export const DateTimePost = styled.p`
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 `;

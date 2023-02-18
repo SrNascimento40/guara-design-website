@@ -12,7 +12,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 30%;
+  padding: 5rem 15% 1.5rem;
 `;
 
 export const Title = styled.h2`
@@ -38,6 +38,8 @@ export const AboutText = styled.p`
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.75rem;
+
+  margin-bottom: 1.5rem;
 
   opacity: 0;
   transform: translateY(50px);

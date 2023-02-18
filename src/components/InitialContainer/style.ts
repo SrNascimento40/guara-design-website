@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 interface ICloudProps {
   left?: boolean;
@@ -26,8 +26,35 @@ export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100vh;
+  height: 56vh;
   overflow: hidden;
+`;
+
+const move = keyframes`
+  0% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150px);
+  }
+`;
+
+const fade = keyframes`
+  0% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.0;
+  }
 `;
 
 export const Image = styled.img<ICloudProps>`
@@ -36,12 +63,14 @@ export const Image = styled.img<ICloudProps>`
   ${(props) =>
     props.left
       ? "left: 0; margin-left: -200px;"
-      : "right: 0; margin-right: -200px;"};
+      : "right: 0; margin-right: -200px; margin-top: 50px;"};
 
   opacity: 0;
   transform: ${(props) =>
     props.left ? "translateX(-150px)" : "translateX(150px)"};
   overflow: hidden;
+
+  animation: ${move} 25s infinite linear, ${fade} 25s infinite ease-in-out;
 
   &.enter {
     opacity: 1;
