@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { AboutText, Container, Title } from "./style";
+import { Container, PartnerWrapper, Title } from "./style";
+import PartnerCard from "../../components/PartnerCard";
 
 //página com as parcerias
 export default function Partnership() {
   const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+    return () => {
+      document.body.style.overflow = "hidden";
+    };
+  }, []);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -11,13 +19,12 @@ export default function Partnership() {
 
   return (
     <Container>
-      <Title className={isLoaded ? "enter" : "loading"}>Sobre</Title>
-      <AboutText className={isLoaded ? "enter" : "loading"}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cumque,
-        quos reprehenderit voluptas, atque assumenda quis, repellendus nemo
-        nulla numquam labore. Inventore, laboriosam esse. Voluptates ea eveniet
-        dolor quam officiis?
-      </AboutText>
+      <Title>Parceiros:</Title>
+      <PartnerWrapper>
+        <PartnerCard />
+        <PartnerCard />
+        <PartnerCard />
+      </PartnerWrapper>
     </Container>
   );
 }
