@@ -6,6 +6,7 @@ import ArticlePost from "../../components/ArticlePost";
 import wolf from "../../assets/Images/guara.png";
 import ProfileCard from "../../components/ProfileCard";
 
+//página inicial
 export default function Home() {
   useEffect(() => {
     document.body.style.overflow = "auto";
