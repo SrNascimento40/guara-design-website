@@ -20,6 +20,12 @@ export const Container = styled.div<IArticleProps>`
     props.blogPage
       ? "linear-gradient(0deg, rgba(210, 198, 236, 0.92) 0%, rgba(253, 231, 254, 0) 15%)"
       : "rgba(210, 198, 236, 0)"};
+
+  @media (max-width: 768px) {
+    margin-top: 3.5rem;
+    max-width: 100vw;
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
@@ -32,6 +38,19 @@ export const Image = styled.img`
     rgba(253, 231, 254, 0) 50%
   );
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    width: 30vw;
+    height: 100%;
+    flex-direction: column;
+  }
+  @media (max-width: 480px) {
+    width: 40vw;
+  }
+  @media (max-width: 320px) {
+    width: 50vw;
+  }
 `;
 
 export const TitlePost = styled.h3`
@@ -40,6 +59,10 @@ export const TitlePost = styled.h3`
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 3rem;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const TextPost = styled.p`
@@ -48,6 +71,10 @@ export const TextPost = styled.p`
   font-weight: 400;
   max-width: 40vw;
   text-align: center;
+
+  @media (max-width: 768px) {
+    max-width: 90vw;
+  }
 `;
 
 export const DateTimePost = styled.p`

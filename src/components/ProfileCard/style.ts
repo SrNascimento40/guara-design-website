@@ -6,6 +6,12 @@ export const Container = styled.div`
   width: 100%;
   align-items: center;
   justify-content: end;
+
+  margin-bottom: 3.5rem;
+  @media (max-width: 768px) {
+    max-width: 100vw;
+  flex-direction: column-reverse;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -13,6 +19,9 @@ export const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 450px;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const StarImg = styled.img`
@@ -21,6 +30,10 @@ export const StarImg = styled.img`
 
   top: 2rem;
   left: 2rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const CloudImg = styled.img`
@@ -42,6 +55,10 @@ export const CloudImg = styled.img`
     100% {
       transform: translateX(-10px);
     }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -65,6 +82,10 @@ export const CloudImg1 = styled.img`
       transform: translateX(-25px);
     }
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Image = styled.img`
@@ -77,6 +98,12 @@ export const Image = styled.img`
     rgba(1, 33, 55, 0) 70%
   );
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    margin-right: 0rem;
+    width: 45vw;
+    height: 100%;
+  }
 `;
 
 export const TitlePost = styled.h3`
@@ -86,6 +113,10 @@ export const TitlePost = styled.h3`
   font-weight: 500;
   line-height: 3rem;
   align-self: center;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const TextPost = styled.p`
@@ -96,6 +127,12 @@ export const TextPost = styled.p`
   max-width: 40vw;
   line-height: 1.75rem;
   text-align: center;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    font-size: 0.825rem;
+    font-weight: 100;
+  }
 `;
 
 export const TextWrapper = styled.div`

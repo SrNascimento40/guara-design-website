@@ -1,16 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
-interface ICloudProps {
-  left?: boolean;
-}
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15vh;
+  padding-top: 11vh;
 `;
 
 export const Wrapper = styled.div`
@@ -26,19 +22,19 @@ export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 56vh;
+  height: 60vh;
   overflow: hidden;
 `;
 
 const move = keyframes`
   0% {
-    transform: translateX(-150px);
+    transform: translateX(-350px);
   }
   50% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(150px);
+    transform: translateX(100px);
   }
 `;
 
@@ -46,37 +42,103 @@ const fade = keyframes`
   0% {
     opacity: 0.0;
   }
+  25% {
+    opacity: 0.1;
+  }
   50% {
     opacity: 0.6;
   }
   85% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   100% {
     opacity: 0.0;
   }
 `;
 
-export const Image = styled.img<ICloudProps>`
+export const Image = styled.img`
   width: 70vw;
   position: absolute;
-  ${(props) =>
-    props.left
-      ? "left: 0; margin-left: -200px;"
-      : "right: 0; margin-right: -200px; margin-top: 50px;"};
-
+  left: 0;
   opacity: 0;
-  transform: ${(props) =>
-    props.left ? "translateX(-150px)" : "translateX(150px)"};
-  overflow: hidden;
+  transform: translateX(-150px);
 
-  animation: ${move} 25s infinite linear, ${fade} 25s infinite ease-in-out;
+  animation: ${move} 55s infinite linear, ${fade} 25s infinite ease-in-out;
 
   &.enter {
     opacity: 1;
     transform: translateX(0);
 
-    transition: opacity 3s ease-in-out, transform 5.5s ease-in-out;
+    transition: opacity 5s ease-in-out, transform 5.5s ease-in-out;
+  }
+`;
+
+const move2 = keyframes`
+  0% {
+    transform: translateX(250px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+`;
+
+const fade2 = keyframes`
+  0% {
+    opacity: 0.0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.0;
+  }
+`;
+
+export const Image2 = styled.img`
+  width: 80vw;
+  position: absolute;
+  right: 0;
+  margin-right: -200px;
+  margin-top: 50px;
+  overflow-y: clip;
+
+  opacity: 0;
+  transform: translateX(150px);
+
+  animation: ${move} 55s infinite linear, ${fade} 55s infinite ease-in-out;
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+
+    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+  }
+`;
+
+export const Image3 = styled.img`
+  width: 75vw;
+  position: absolute;
+  left: -250px;
+  margin-right: -350px;
+  margin-top: 25px;
+  overflow-y: clip;
+
+  opacity: 0;
+  transform: translateX(150px);
+
+  animation: ${move} 27s infinite linear, ${fade} 27s infinite ease-in-out;
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+
+    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
   }
 `;
 
@@ -84,6 +146,8 @@ export const Title = styled.h2`
   font-weight: 500;
   color: transparent;
   font-family: "Matchadal";
+
+  cursor: default;
 
   font-size: 8rem;
   line-height: 8.5rem;
@@ -103,12 +167,35 @@ export const Title = styled.h2`
     transform: translateY(0);
     transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  @media (max-width: 555px) {
+    font-size: 4.25rem;
+    line-height: 5.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 `;
 
 export const Title2 = styled.h2`
   font-weight: 500;
   color: transparent;
   font-family: "Matchadal";
+
+  cursor: default;
 
   font-size: 8rem;
   line-height: 8.5rem;
@@ -128,12 +215,35 @@ export const Title2 = styled.h2`
     transform: translateY(0);
     transition: opacity 1.25s ease-in-out, transform 1.5s ease-in-out;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  @media (max-width: 555px) {
+    font-size: 4.25rem;
+    line-height: 5.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
 `;
 
 export const Title3 = styled.h2`
   font-weight: 500;
   color: transparent;
   font-family: "Matchadal";
+
+  cursor: default;
 
   font-size: 8rem;
   line-height: 8.5rem;
@@ -153,12 +263,35 @@ export const Title3 = styled.h2`
     transform: translateY(0);
     transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  @media (max-width: 555px) {
+    font-size: 4.25rem;
+    line-height: 5.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
 `;
 
 export const Title4 = styled.h2`
   font-weight: 700;
   color: rgba(255, 255, 255, 0.4);
   font-family: "Matchadal";
+
+  cursor: default;
 
   font-size: 8rem;
   line-height: 8.5rem;
@@ -171,12 +304,34 @@ export const Title4 = styled.h2`
     transform: translateY(0);
     transition: opacity 1.75s ease-in-out, transform 1.5s ease-in-out;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  @media (max-width: 555px) {
+    font-size: 4.25rem;
+    line-height: 5.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
 `;
 
 export const Title5 = styled.h2`
   font-weight: 900;
   color: rgba(255, 255, 255, 0.54);
   font-family: "Matchadal";
+  cursor: default;
 
   font-size: 8rem;
   line-height: 8.5rem;
@@ -188,5 +343,26 @@ export const Title5 = styled.h2`
     opacity: 1;
     transform: translateY(0);
     transition: opacity 2s ease-in-out, transform 1.5s ease-in-out;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+  @media (max-width: 555px) {
+    font-size: 4.25rem;
+    line-height: 5.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  @media (max-width: 360px) {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 `;
