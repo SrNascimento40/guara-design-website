@@ -43,12 +43,14 @@ export default function Login() {
         <Title className={isLoaded ? "enter" : "loading"}>Login</Title>
         <InputWrapper>
           <Input
+            required
             type="text"
             placeholder="Usuário"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
           <Input
+            required
             type="password"
             placeholder="Senha"
             value={password}

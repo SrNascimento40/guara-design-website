@@ -15,17 +15,20 @@ interface IArticlePostProps {
   text: string;
   datetime: string;
   blogPage: boolean;
+  id: number;
 }
 
 export default function ArticlePost(props: IArticlePostProps) {
   return (
     <Container blogPage={props.blogPage}>
-      <Link to={"/post"}>
+      <Link to={`/post/${props.id}`}>
         <Image src={props.image} />
       </Link>
       <TextWrapper>
         <DateTimePost>{props.datetime}</DateTimePost>
-        <TitlePost>{props.title}</TitlePost>
+        <Link to={`/post/${props.id}`}>
+          <TitlePost>{props.title}</TitlePost>
+        </Link>
         <TextPost>{props.text}</TextPost>
       </TextWrapper>
     </Container>
