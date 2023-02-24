@@ -10,7 +10,7 @@ export const Container = styled.div`
   margin-bottom: 3.5rem;
   @media (max-width: 768px) {
     max-width: 100vw;
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 `;
 
@@ -21,6 +21,7 @@ export const ImageContainer = styled.div`
   width: 450px;
   @media (max-width: 768px) {
     justify-content: center;
+    width: 50vw;
   }
 `;
 
@@ -132,10 +133,15 @@ export const TextPost = styled.p`
     margin-top: 1rem;
     font-size: 0.825rem;
     font-weight: 100;
+    max-width: fit-content;
   }
 `;
 
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
 `;

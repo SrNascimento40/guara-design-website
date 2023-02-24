@@ -22,19 +22,19 @@ export const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 60vh;
+  height: 100%;
   overflow: hidden;
 `;
 
 const move = keyframes`
   0% {
-    transform: translateX(-350px);
+    transform: translateX(-250px);
   }
   50% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100px);
+    transform: translateX(250px);
   }
 `;
 
@@ -48,9 +48,6 @@ const fade = keyframes`
   50% {
     opacity: 0.6;
   }
-  85% {
-    opacity: 0.3;
-  }
   100% {
     opacity: 0.0;
   }
@@ -58,19 +55,10 @@ const fade = keyframes`
 
 export const Image = styled.img`
   width: 70vw;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  transform: translateX(-150px);
+  display: block;
+  object-fit: contain;
 
-  animation: ${move} 55s infinite linear, ${fade} 25s infinite ease-in-out;
-
-  &.enter {
-    opacity: 1;
-    transform: translateX(0);
-
-    transition: opacity 5s ease-in-out, transform 5.5s ease-in-out;
-  }
+  animation: ${move} 55s infinite linear, ${fade} 55s infinite ease-in-out;
 `;
 
 const move2 = keyframes`
@@ -102,44 +90,57 @@ const fade2 = keyframes`
 
 export const Image2 = styled.img`
   width: 80vw;
-  position: absolute;
-  right: 0;
+  display: block;
+  object-fit: contain;
   margin-right: -200px;
-  margin-top: 50px;
-  overflow-y: clip;
+  margin-top: 40px;
 
-  opacity: 0;
-  transform: translateX(150px);
-
-  animation: ${move} 55s infinite linear, ${fade} 55s infinite ease-in-out;
-
-  &.enter {
-    opacity: 1;
-    transform: translateX(0);
-
-    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
-  }
+  animation: ${move2} 55s infinite linear, ${fade2} 55s infinite ease-in-out;
 `;
 
 export const Image3 = styled.img`
-  width: 75vw;
+  width: 55vw;
   position: absolute;
-  left: -250px;
-  margin-right: -350px;
+  left: -100px;
+  top: 0;
+  object-fit: contain;
+  margin-right: -35px;
   margin-top: 25px;
-  overflow-y: clip;
 
-  opacity: 0;
-  transform: translateX(150px);
+  animation: ${move} 92s infinite linear, ${fade} 92s infinite ease-in-out;
+`;
 
-  animation: ${move} 27s infinite linear, ${fade} 27s infinite ease-in-out;
+export const Image4 = styled.img`
+  width: 50vw;
+  position: absolute;
+  right: -100px;
+  top: 25px;
+  object-fit: contain;
+  margin-right: -200px;
+  margin-top: 40px;
 
-  &.enter {
-    opacity: 1;
-    transform: translateX(0);
+  animation: ${move2} 95s infinite linear, ${fade2} 95s infinite ease-in-out;
+`;
 
-    transition: opacity 5s ease-in-out, transform 5s ease-in-out;
-  }
+export const Image5 = styled.img`
+  width: 60vw;
+  position: absolute;
+  left: -400px;
+  top: 0;
+
+  animation: ${move} 185s infinite linear, ${fade} 185s infinite ease-in-out;
+`;
+
+export const Image6 = styled.img`
+  width: 60vw;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  object-fit: contain;
+  margin-right: -200px;
+  margin-top: 40px;
+
+  animation: ${move2} 185s infinite linear, ${fade2} 185s infinite ease-in-out;
 `;
 
 export const Title = styled.h2`

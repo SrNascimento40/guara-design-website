@@ -3,6 +3,8 @@ import {
   Container,
   Image,
   Image2,
+  Image5,
+  Image6,
   ImageWrapper,
   Title,
   Title2,
@@ -13,8 +15,7 @@ import {
 } from "./style";
 import cloud2 from "../../assets/Images/cloud.png";
 import cloud1 from "../../assets/Images/cloud2.png";
-import smallCloud from "../../assets/Images/small-cloud.png";
-import { Image3 } from './style';
+import { Image3, Image4 } from './style';
 
 export default function InitialContainer() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -45,16 +46,22 @@ export default function InitialContainer() {
       <ImageWrapper>
         <Image
           src={cloud1}
-          className={isLoaded ? "enter" : "loading"}
         ></Image>
         <Image2
           src={cloud2}
-          className={isLoaded ? "enter" : "loading"}
         ></Image2>
         <Image3
           src={cloud1}
-          className={isLoaded ? "enter" : "loading"}
         ></Image3>
+        <Image4
+          src={cloud2}
+        ></Image4>
+        <Image5
+          src={cloud1}
+        ></Image5>
+        <Image6
+          src={cloud1}
+        ></Image6>
       </ImageWrapper>
     </Container>
   );
