@@ -26,6 +26,10 @@ export const PostContainer = styled.div`
   justify-content: center;
 
   background: rgba(210, 198, 236, 0.75);
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1.5rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -37,12 +41,37 @@ export const Title = styled.h1`
   font-family: "Yanone Kaffeesatz", sans-serif;
   word-break: break-word;
   white-space: pre-wrap;
+
+  @media (max-width: 768px) {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  margin: 2rem 0 0;
+  }
+
+  @media (max-width: 410px) {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin: 15px 0;
+  }
+
+  @media (max-width: 340px) {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 10px 0;
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
   max-width: 982px;
   margin: 2.5rem auto 1.25rem;
+
+
+
+  @media (max-width: 410px) {
+  margin: 0 auto 1.25rem;
+  }
 `;
 
 export const Date = styled.p`
@@ -50,12 +79,19 @@ export const Date = styled.p`
   text-align: start;
   width: 100%;
   margin-bottom: 2.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const Text = styled.p`
   font-size: 1.125rem;
   line-height: 2rem;
   color: #434a69;
-  word-break: break-word;
   white-space: pre-wrap;
+
+  @media (max-width: 768px) {
+    text-align: start;
+  }
 `;
