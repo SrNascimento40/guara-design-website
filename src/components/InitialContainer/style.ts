@@ -107,7 +107,7 @@ export const Image3 = styled.img`
   margin-right: -35px;
   margin-top: 25px;
 
-  animation: ${move} 92s infinite linear, ${fade} 92s infinite ease-in-out;
+  animation: ${move} 62s infinite linear, ${fade} 62s infinite ease-in-out;
 `;
 
 export const Image4 = styled.img`
@@ -119,7 +119,7 @@ export const Image4 = styled.img`
   margin-right: -200px;
   margin-top: 40px;
 
-  animation: ${move2} 95s infinite linear, ${fade2} 95s infinite ease-in-out;
+  animation: ${move2} 65s infinite linear, ${fade2} 65s infinite ease-in-out;
 `;
 
 export const Image5 = styled.img`

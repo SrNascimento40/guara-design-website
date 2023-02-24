@@ -12,6 +12,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    padding: 0 5%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -53,7 +57,7 @@ export const Image = styled.img`
   bottom: 0;
   left: 0;
   height: 50vh;
-  z-index: 0;
+  z-index: -1;
 
   opacity: 0;
   transform: translateY(50px);
@@ -62,5 +66,9 @@ export const Image = styled.img`
     opacity: 1;
     transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

@@ -6,7 +6,7 @@ import Books from "../pages/Books";
 import EspiritBooks from "../pages/EspiritBooks";
 import Partnership from "../pages/Partnership";
 import Contact from "../pages/Contact";
-import Post from "../pages/post";
+import Post from "../pages/Post";
 import Admin from "../pages/Admin";
 import Login from "../pages/Login";
 import Edit from "../pages/Edit";

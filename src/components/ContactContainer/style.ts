@@ -17,6 +17,11 @@ export const Container = styled.div`
     transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
+
+  @media (max-width: 768px) {
+  width: 90%;
+  padding: 1.25rem;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -45,5 +50,8 @@ export const LinkContact = styled.a`
 
   svg {
     margin-right: 1rem;
+  }
+  @media (max-width: 768px) {
+  font-size: 1.25rem;
   }
 `;
