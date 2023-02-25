@@ -27,6 +27,15 @@ export const PostContainer = styled.div`
 
   background: rgba(210, 198, 236, 0.75);
 
+  opacity: 0;
+  transform: translateY(150px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
   @media (max-width: 768px) {
     padding: 0.5rem 1.5rem;
   }
@@ -43,22 +52,22 @@ export const Title = styled.h1`
   white-space: pre-wrap;
 
   @media (max-width: 768px) {
-  text-align: center;
-  font-size: 2.5rem;
-  line-height: 2.75rem;
-  margin: 2rem 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin: 2rem 0 0;
   }
 
   @media (max-width: 410px) {
-  font-size: 2rem;
-  line-height: 2.25rem;
-  margin: 15px 0;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin: 15px 0;
   }
 
   @media (max-width: 340px) {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  margin-bottom: 10px 0;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 10px 0;
   }
 `;
 
@@ -67,10 +76,8 @@ export const Image = styled.img`
   max-width: 982px;
   margin: 2.5rem auto 1.25rem;
 
-
-
   @media (max-width: 410px) {
-  margin: 0 auto 1.25rem;
+    margin: 0 auto 1.25rem;
   }
 `;
 
@@ -93,5 +100,41 @@ export const Text = styled.p`
 
   @media (max-width: 768px) {
     text-align: start;
+  }
+`;
+
+export const ShareIconsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 5rem 0 1rem;
+      padding: 0 2rem;
+    }
+  }
+`;
+
+export const ShareIcon = styled.a`
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+
+  svg {
+    color: #333;
   }
 `;

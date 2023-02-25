@@ -1,6 +1,16 @@
-import React, { useEffect } from "react";
-import { Container, Date, Image, PostContainer, Text, Title } from "./style";
+import React, { useEffect, useState } from "react";
+import {
+  Container,
+  Date,
+  Image,
+  PostContainer,
+  ShareIcon,
+  ShareIconsWrapper,
+  Text,
+  Title,
+} from "./style";
 import imagem from "../../assets/Images/postExemplo.png";
+import { FaInstagram, FaLink, FaTwitter } from "react-icons/fa";
 
 interface IPostContainer {
   id: number;
@@ -14,8 +24,14 @@ interface IPostContainer {
 
 //página do post
 export default function Post() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const currentUrl = window.location.href;
+  const shareInsta = "https://www.instagram.com/share?url=" + currentUrl;
+  const shareTwitter = "https://twitter.com/intent/tweet?url=" + currentUrl;
+
   useEffect(() => {
     document.body.style.overflow = "auto";
+    setIsLoaded(true);
     return () => {
       document.body.style.overflow = "hidden";
     };
@@ -41,15 +57,33 @@ export default function Post() {
     },
   ];
 
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+  };
+
   return (
     <Container>
       {postStandard.map((post) => {
         return (
-          <PostContainer key={post.id}>
+          <PostContainer
+            key={post.id}
+            className={isLoaded ? "enter" : "loading"}
+          >
             <Title>{post.title}</Title>
             <Image src={imagem} />
             <Date>{post.datetime}</Date>
             <Text>{post.text}</Text>
+            <ShareIconsWrapper>
+              <ShareIcon href={shareInsta} target="_blank">
+                <FaInstagram />
+              </ShareIcon>
+              <ShareIcon href={shareTwitter} target="_blank">
+                <FaTwitter />
+              </ShareIcon>
+              <ShareIcon>
+                <FaLink onClick={handleCopyLink}/>
+              </ShareIcon>
+            </ShareIconsWrapper>
           </PostContainer>
         );
       })}

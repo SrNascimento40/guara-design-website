@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Image,
@@ -19,8 +19,17 @@ interface IArticlePostProps {
 }
 
 export default function ArticlePost(props: IArticlePostProps) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+  
   return (
-    <Container blogPage={props.blogPage}>
+    <Container
+      blogPage={props.blogPage}
+      className={isLoaded ? "enter" : "loading"}
+    >
       <Link to={`/post/${props.id}`}>
         <Image src={props.image} />
       </Link>

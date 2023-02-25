@@ -3,7 +3,6 @@ import InitialContainer from "../../components/InitialContainer";
 import { Container } from "./style";
 import Footer from "../../components/Footer";
 import ArticlePost from "../../components/ArticlePost";
-import wolf from "../../assets/Images/guara.png";
 import ProfileCard from "../../components/ProfileCard";
 
 const posts = [

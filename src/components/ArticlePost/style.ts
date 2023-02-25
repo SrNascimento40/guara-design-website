@@ -21,6 +21,15 @@ export const Container = styled.div<IArticleProps>`
       ? "linear-gradient(0deg, rgba(210, 198, 236, 0.92) 0%, rgba(253, 231, 254, 0) 15%)"
       : "rgba(210, 198, 236, 0)"};
 
+  opacity: 0;
+  transform: translateX(150px);
+
+  &.enter {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
   @media (max-width: 768px) {
     margin-top: 3.5rem;
     max-width: 100vw;
@@ -59,9 +68,9 @@ export const TitlePost = styled.h3`
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 3rem;
-
-  @media (max-width: 768px) {
-    text-align: center;
+  text-align: center;
+  @media (min-width: 980px) {
+    max-width: 50vw;
   }
 `;
 
