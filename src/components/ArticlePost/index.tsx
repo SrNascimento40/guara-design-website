@@ -6,8 +6,10 @@ import {
   TextPost,
   TextWrapper,
   DateTimePost,
+  AdminWrapper,
 } from "./style";
 import { Link } from "react-router-dom";
+import { FiEdit, FiX } from "react-icons/fi";
 
 interface IArticlePostProps {
   image: string;
@@ -16,6 +18,7 @@ interface IArticlePostProps {
   datetime: string;
   blogPage: boolean;
   id: number;
+  admin?: true;
 }
 
 export default function ArticlePost(props: IArticlePostProps) {
@@ -24,7 +27,7 @@ export default function ArticlePost(props: IArticlePostProps) {
   useEffect(() => {
     setIsLoaded(true);
   }, []);
-  
+
   return (
     <Container
       blogPage={props.blogPage}
@@ -40,6 +43,10 @@ export default function ArticlePost(props: IArticlePostProps) {
         </Link>
         <TextPost>{props.text}</TextPost>
       </TextWrapper>
+      <AdminWrapper admin={props.admin}>
+        <FiEdit />
+        <FiX />
+      </AdminWrapper>
     </Container>
   );
 }

@@ -93,6 +93,7 @@ export const Image = styled.img`
   width: 25vw;
   height: 20vw;
   margin-right: 3rem;
+  border-radius: 50%;
   background: radial-gradient(
     circle,
     rgba(201, 33, 55, 1) 0%,

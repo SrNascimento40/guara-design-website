@@ -97,10 +97,7 @@ export const Text = styled.p`
   line-height: 2rem;
   color: #434a69;
   white-space: pre-wrap;
-
-  @media (max-width: 768px) {
-    text-align: start;
-  }
+  text-align: justify;
 `;
 
 export const ShareIconsWrapper = styled.div`

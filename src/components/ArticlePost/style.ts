@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 interface IArticleProps {
-  blogPage: boolean;
+  blogPage?: boolean;
+  admin?: boolean;
 }
 
 export const Container = styled.div<IArticleProps>`
@@ -97,4 +98,25 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+`;
+
+export const AdminWrapper = styled.div<IArticleProps>`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  display: ${(props) =>
+    props.admin
+      ? "flex"
+      : "none"};
+  
+  svg {
+    margin: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
 `;
