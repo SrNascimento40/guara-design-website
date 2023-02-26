@@ -33,6 +33,12 @@ export const Container = styled.div`
     transform: translateX(0);
     transition: 0.3s ease-in-out;
   }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    height: 70vw;
+    width: 80vw;
+  }
 `;
 
 export const TitleCard = styled.p`

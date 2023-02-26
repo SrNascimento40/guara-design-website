@@ -10,6 +10,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5rem 15% 1.5rem;
+
+  @media (max-width: 768px) {
+    padding: 3rem 0.5rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -28,6 +32,11 @@ export const Title = styled.h2`
     transform: translateY(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -35,4 +44,10 @@ export const CardWrapper = styled.div`
   align-items: center;
   flex-direction: row;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
