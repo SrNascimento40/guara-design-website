@@ -39,11 +39,8 @@ export default function Books() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
-  useEffect(() => {
     document.body.style.overflow = "auto";
+    setIsLoaded(true);
     return () => {
       document.body.style.overflow = "hidden";
     };
