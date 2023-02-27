@@ -35,6 +35,36 @@ export const StarImg = styled.img`
   @media (max-width: 768px) {
     display: none;
   }
+
+  animation: starShine 12s ease-in-out infinite;
+
+  @keyframes starShine {
+    0% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+    47% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+    50% {
+      filter: brightness(1.25);
+      opacity: 0.8;
+      transform: rotate(15deg) scale(1.25);
+    }
+    53% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+  }
 `;
 
 export const CloudImg = styled.img`

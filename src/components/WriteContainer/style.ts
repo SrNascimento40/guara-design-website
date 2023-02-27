@@ -136,6 +136,7 @@ export const PostButton = styled.button`
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 
+  cursor: pointer;
   background-color: #333;
   align-self: flex-end;
   border-radius: 10px;

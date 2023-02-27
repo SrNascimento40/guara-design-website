@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, MenuItem, MenuItems } from "./style";
+import { Container, MenuItem, MenuItems, Star } from "./style";
 import { Link } from "react-router-dom";
+import star from "../../assets/Images/Vector.png";
 
 const menuItems = [
   { label: "Inicio", link: "/" },
@@ -14,6 +15,7 @@ const menuItems = [
 export default function Header() {
   return (
     <Container>
+      <Star src={star}></Star>
       {menuItems.map((item, index) => (
         <MenuItems key={index}>
           <MenuItem to={item.link}>{item.label}</MenuItem>

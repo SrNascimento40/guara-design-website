@@ -79,3 +79,43 @@ export const MenuItem = styled(Link)`
     font-size: 1rem;
   }
 `;
+
+export const Star = styled.img`
+  position: absolute;
+  left: -0.25rem;
+  bottom: -0.25rem;
+  height: 0.5rem;
+  animation: starShine 15s ease-in-out infinite;
+
+  @keyframes starShine {
+    0% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+    47% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+    50% {
+      filter: brightness(1.5);
+      opacity: 0.8;
+      transform: rotate(45deg) scale(1.75);
+    }
+    53% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      filter: brightness(1);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+`;
