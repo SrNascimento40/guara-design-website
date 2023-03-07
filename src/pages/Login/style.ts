@@ -38,7 +38,7 @@ export const LoginContainer = styled.div`
   justify-content: space-between;
 
   border-radius: 5px;
-  border: solid 3px rgba(155, 23, 200, 0.10);;
+  border: solid 3px rgba(155, 23, 200, 0.1);
   background-color: rgba(155, 23, 200, 0.13);
 `;
 
@@ -72,4 +72,10 @@ export const Button = styled.button`
   color: white;
 
   margin: 2rem 0rem;
+`;
+
+export const ErrorMessage = styled.p`
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+  color: red;
 `;

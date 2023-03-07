@@ -9,7 +9,7 @@ import {
   Text,
   Title,
 } from "./style";
-import imagem from "../../assets/Images/postExemplo.png";
+import imagem from "../../assets/Images/postExemplo.jpg";
 import { FaInstagram, FaLink, FaTwitter } from "react-icons/fa";
 
 interface IPostContainer {
@@ -81,7 +81,7 @@ export default function Post() {
                 <FaTwitter />
               </ShareIcon>
               <ShareIcon>
-                <FaLink onClick={handleCopyLink}/>
+                <FaLink onClick={handleCopyLink} />
               </ShareIcon>
             </ShareIconsWrapper>
           </PostContainer>

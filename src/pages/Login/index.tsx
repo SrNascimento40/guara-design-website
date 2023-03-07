@@ -16,11 +16,10 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
+    setIsLoaded(true);
     document.body.style.overflow = "auto";
     return () => {
       document.body.style.overflow = "hidden";
